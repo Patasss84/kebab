@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronika Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #00bcd4, #2196f3);
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        .card button {
+            background: #2196f3;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #0b7dda;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elektronika Shop</h1>
+    <p>Nejlepší technologie na jednom místě</p>
+</header>
+
+<nav>
+    <a href="#">Domů</a>
+    <a href="#">Produkty</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<section class="hero">
+    <h2>Objev nejnovější elektroniku</h2>
+    <p>Telefony, notebooky, sluchátka a další</p>
+</section>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Telefon">
+        <h3>Smartphone</h3>
+        <p>Moderní výkonný telefon</p>
+        <button>Koupit</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Notebook">
+        <h3>Notebook</h3>
+        <p>Ideální pro práci i zábavu</p>
+        <button>Koupit</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250" alt="Sluchátka">
+        <h3>Sluchátka</h3>
+        <p>Perfektní zvuk</p>
+        <button>Koupit</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Elektronika Shop</p>
+</footer>
+
+</body>
+</html>
