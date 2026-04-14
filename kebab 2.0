@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElectroShop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: #0a1f44;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* NAV */
+nav {
+    background: #102a5c;
+    padding: 10px 30px;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 60px 30px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    color: #0072ff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #008ecc;
+}
+
+/* FOOTER */
+footer {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>⚡ ElectroShop</h1>
+    <input type="text" placeholder="Hledat produkty...">
+</header>
+
+<nav>
+    <a href="#">Telefony</a>
+    <a href="#">Notebooky</a>
+    <a href="#">Sluchátka</a>
+    <a href="#">Gaming</a>
+</nav>
+
+<section class="hero">
+    <h2>Nejlepší elektronika 2026</h2>
+    <p>Výprodej až -40 % 🔥</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+    <h3>iPhone 15</h3>
+    <p>Výkonný Apple telefon</p>
+    <p class="price">25 990 Kč</p>
+    <button>Koupit</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+    <h3>MacBook Pro</h3>
+    <p>Profesionální notebook</p>
+    <p class="price">49 990 Kč</p>
+    <button>Koupit</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1518444028785-8f1d4bdfc5c7">
+    <h3>AirPods</h3>
+    <p>Bezdrátová sluchátka</p>
+    <p class="price">4 990 Kč</p>
+    <button>Koupit</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+    <h3>Herní klávesnice</h3>
+    <p>RGB podsvícení</p>
+    <p class="price">2 490 Kč</p>
+    <button>Koupit</button>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 ElectroShop | Všechna práva vyhrazena</p>
+</footer>
+
+</body>
+</html>
